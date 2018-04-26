@@ -31,7 +31,7 @@ Electron 运行 `package.json` 的 `main` 脚本的进程被称为**主进程**�
 ```text
 your-app/
 ├── package.json
-├── main.js
+├── index.js
 └── index.html
 ```
 
@@ -41,13 +41,13 @@ your-app/
 {
   "name"    : "your-app",
   "version" : "0.1.0",
-  "main"    : "main.js"
+  "main"    : "index.js"
 }
 ```
 
 **注意**：如果 `main` 字段没有在 `package.json` 声明，Electron会优先加载 `index.js`。
 
-`main.js` 应该用于创建窗口和处理系统事件，一个典型的例子如下：
+`index.js` 应该用于创建窗口和处理系统事件，一个典型的例子如下：
 
 ```javascript
 const {app, BrowserWindow} = require('electron')
@@ -127,7 +127,7 @@ app.on('activate', () => {
 
 ## 运行你的应用
 
-一旦你创建了最初的 `main.js`， `index.html` 和 `package.json` 这几个文件，你可能会想尝试在本地运行并测试，看看是不是和期望的那样正常运行。
+一旦你创建了最初的 `index.js`， `index.html` 和 `package.json` 这几个文件，你可能会想尝试在本地运行并测试，看看是不是和期望的那样正常运行。
 
 ### `electron`
 

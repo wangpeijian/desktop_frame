@@ -16,7 +16,7 @@ Electron 现在支持 Pepper Flash 插件。要在 Electron 里面使用 Pepper 
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
-// 指定 flash 路径，假定它与 main.js 放在同一目录中。
+// 指定 flash 路径，假定它与 index.js 放在同一目录中。
 let pluginName
 switch (process.platform) {
   case 'win32':

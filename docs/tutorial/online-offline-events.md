@@ -4,7 +4,7 @@
 
 例子:
 
-*main.js*
+*index.js*
 
 ```javascript
 const {app, BrowserWindow} = require('electron')
@@ -39,7 +39,7 @@ app.on('ready', () => {
 
 也会有人想要在主进程也有回应这些事件的实例。 然后主进程没有 `navigator` 对象因此不能直接探测在线还是离线。 使用 Electron 的进程间通讯工具，事件就可以在主进程被使用，就像下面的例子.
 
-*main.js*
+*index.js*
 
 ```javascript
 const {app, BrowserWindow, ipcMain} = require('electron')

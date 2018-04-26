@@ -7,7 +7,7 @@
 ```text
 electron/Electron.app/Contents/Resources/app/
 ├── package.json
-├── main.js
+├── index.js
 └── index.html
 ```
 
@@ -16,7 +16,7 @@ electron/Electron.app/Contents/Resources/app/
 ```text
 electron/resources/app
 ├── package.json
-├── main.js
+├── index.js
 └── index.html
 ```
 
