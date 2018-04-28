@@ -17,6 +17,7 @@ function createWindow () {
 
     // and load the index.html of the app.
     mainWindow.loadURL("http://act.guoanfamily.com/");
+    mainWindow.setProgressBar(0.5);
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
